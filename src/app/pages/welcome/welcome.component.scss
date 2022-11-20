@@ -1,0 +1,251 @@
+.bg-welcome {
+    background-image: url("../../../assets/img/robot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-welcome span {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.text-welcome p {
+    text-transform: uppercase;
+    line-height: 3;
+    letter-spacing: 10px;
+    color: white;
+    font-size: x-large;
+}
+
+.text-welcome h2 {
+    text-transform: uppercase;
+    line-height: 3;
+    font-weight: 500;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.text-welcome h1 {
+    color: var(--black-color);
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 8em;
+    line-height: 1.5;
+    letter-spacing: 10px;
+}
+
+.text-normal span {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    color: var(--black-color);
+}
+
+.text-normal p {
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 10px;
+    font-size: x-large;
+    color: var(--black-color);
+}
+
+.text-normal h2 {
+    text-transform: uppercase;
+    line-height: 3;
+    font-weight: 500;
+    letter-spacing: 10px;
+    color: var(--black-color);
+}
+
+.text-normal h1 {
+    color: var(--black-color);
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 8em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.hr {
+    border: none;
+    height: 10px;
+    background-color: white;
+}
+
+.btn_gral {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 1px;
+    border: solid transparent;
+    border-radius: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    // margin: 0 1rem 1rem 0;
+    line-height: 1.5;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}  
+
+.btn_primary {
+    background-color: var(--color-bue-button);
+    border-radius: 20px;
+    box-shadow: 2px 4px 20px 5px #137cff;
+    -webkit-box-shadow: 2px 4px 20px 5px #137cff;
+    -moz-box-shadow: 2px 4px 20px 5px #137cff;
+    color: var(--white-color);
+}
+
+.btn_primary:hover {
+    color: var(--grey-light);
+    background-color: var(--color-bue-button);
+    /* background-color: #09914b; */
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.text-card span {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    color: var(--black-color);
+}
+
+.text-card p {
+    text-transform: uppercase;
+    font-size: x-large;
+    color: var(--black-color);
+}
+
+.text-card h2 {
+    color: var(--black-color);
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.text-card h1 {
+    color: var(--black-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.card {
+    border: none;
+}
+
+.cardNew {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    // border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-bodyNew {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: #F8F8F8;
+    border-color: #CBCBCB;
+  }
+
+.titulo-card1 {
+    background-image: radial-gradient(circle at 83.03% 41.15%,
+            #e157eb 0,
+            #c54cee 16.67%,
+            #a443f0 33.33%,
+            #783cf2 50%,
+            #2c38f4 66.67%,
+            #0038f5 83.33%,
+            #003af6 100%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: transparent;
+}
+
+.titulo-card2 {
+    background-image: radial-gradient(circle at -20.44% 56.16%,
+            #fffaa0 0,
+            #fffc91 6.25%,
+            #fffd82 12.5%,
+            #fffe73 18.75%,
+            #fffd65 25%,
+            #fffc58 31.25%,
+            #f5fa4d 37.5%,
+            #d7f643 43.75%,
+            #b5f23c 50%,
+            #8fed3b 56.25%,
+            #61e840 62.5%,
+            #00e44b 68.75%,
+            #00df59 75%,
+            #00db69 81.25%,
+            #00d87b 87.5%,
+            #00d48f 93.75%,
+            #00d1a4 100%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: transparent;
+}
+
+.text-planes span {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    color: var(--black-color);
+}
+
+.text-planes p {
+    text-transform: uppercase;
+    line-height: 3;
+    letter-spacing: 10px;
+    color: var(--black-color);
+    font-size: x-large;
+}
+
+.text-planes h2 {
+    color: var(--black-color);
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.text-planes h1 {
+    color: var(--black-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.text-planes h3 {
+    color: var(--white-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1;
+    letter-spacing: 10px;
+}

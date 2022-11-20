@@ -1,0 +1,22 @@
+<app-navbar-client></app-navbar-client>
+<div class="col-12 p-5 text-talleres">
+    <h2 align="center">NUESTROS TALLERES</h2>
+</div>
+<div class="col-12 py-5">
+    <div class="row" align="center">
+        <div class="col-4" *ngFor="let item of talleres">
+            <div class="card" style="width:25rem">
+                <img src="./assets/img/{{item.imagen}}" style="width: auto;" class="card-img-top"/>
+                <div class="card-body">
+                    <h1>{{item.taller}}</h1>
+                    <h1>{{item.horario}}</h1>
+                    <h1><strong>{{item.ponente}}</strong></h1>
+                    <p class="card-text">
+                        {{item.descripcion}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

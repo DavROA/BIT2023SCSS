@@ -1,0 +1,66 @@
+<app-navbar-client></app-navbar-client>
+<div class="container-fuid py-5">
+    <div class="p-5 col-10 offset-1">
+        <div class="col-10" align="center">
+            <div class="row py-3">
+                <div class="col-4 titulo-completar">Informacion Personal</div>
+                <div class="col-3 titulo-completar">
+                    <hr>
+                </div>
+                <div class="col-1 titulo-completar">Pago</div>
+                <div class="col-3 titulo-completar">
+                    <hr>
+                </div>
+                <div class="col-1 titulo-completar active">Talleres</div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header">
+                <h3 class="fw-bold">Talleres</h3>
+            </div>
+            <div class="card-body" align="center">
+                <h3 class="subtitulo">Selecciona los talleres a los que deseas asistir</h3>
+                <div>
+                    <style>
+                        table,
+                        th,
+                        td {
+                            border: 1px solid black;
+                            align-items: center;
+                        }
+                    </style>
+                    <table style="width:100%">
+                        <tr align="center">
+                            <th>Horario</th>
+                            <th colspan="3" style="width:80%">Talleres</th>
+                        </tr>
+                        <tr align="center">
+                            <th>12:00:00</th>
+                            <td>
+                                <label class="container">Taller 1
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="container">Taller 1
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <label class="container">Taller 1
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button type="button" (click)="eleccion()" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

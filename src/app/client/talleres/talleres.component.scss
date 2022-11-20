@@ -1,0 +1,45 @@
+.text-talleres span {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    color: var(--black-color);
+}
+
+.text-talleres p {
+    text-transform: uppercase;
+    line-height: 3;
+    letter-spacing: 10px;
+    color: var(--black-color);
+    font-size: x-large;
+}
+
+.text-talleres h2 {
+    color: var(--black-color);
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.text-talleres h1 {
+    color: var(--black-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.text-talleres h3 {
+    color: var(--white-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.card-body {
+    background-color: #F9F9F9;
+}
