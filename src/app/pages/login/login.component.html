@@ -1,0 +1,97 @@
+<app-navbar></app-navbar>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="container">
+      <div class="p-5 col-12" align="center">
+        <div class="card mb-3" style="max-width: 720px">
+          <div class="row g-0">
+            <div class="col-md-4 primer_cuadro_login">
+              <hr />
+              <hr />
+              <hr />
+              <p class="texto_primer_cuadro">
+                BUSINESS, INNOVATION & TECHONOLOGY
+              </p>
+              <img src="./assets/img/login_mano.png" alt="" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body cuadro_card">
+                <div class="row">
+                  <div class="col-6" [routerLink]="['/registro']">Registro</div>
+                  <div class="col-6">
+                    <span><strong>Login</strong></span>
+                  </div>
+                </div>
+                <hr />
+                <h5 class="card-title">Bienvenido de nuevo</h5>
+                <form autocomplete="off" [formGroup]="miFormulario">
+                  <div class="mb-3 row justify-content-md-center" align="center">
+                    <div class="col-12">
+                      <label class="form-label fw-bold">Email:</label>
+                      <input
+                        class="input_login"
+                        type="email"
+                        class="form-control"
+                        formControlName="correo"
+                        placeholder="Email"
+                        [pattern]="emailCheck"
+                      />
+                      <div>
+                        <span *ngIf="emailReq()" class="form-text text-danger">
+                          Dirección de correo no válida</span
+                        >
+                      </div>
+                      <span *ngIf="emailPattern()" class="form-text text-danger">
+                        Patrón incorrecto</span
+                      >
+                    </div>
+                  </div>
+  
+                  <div class="mb-3 row justify-content-md-center" align="center">
+                    <div class="col-12">
+                      <label class="form-label fw-bold">Contraseña:</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        formControlName="pass"
+                        placeholder="Ingrese su contraseña"
+                      />
+                      <span
+                        class="form-text text-danger"
+                        *ngIf="campoValido('pass')"
+                        >Mínimo 8 caracteres</span
+                      >
+                    </div>
+                  </div>
+  
+                  <div class="mb-3 row text-center">
+                    <div class="col">
+                      <button
+                        type="submit"
+                        [disabled]="miFormulario.invalid"
+                        class="btn btn-primary btn-lg"
+                        (click)="save()"
+                      >
+                        Iniciar sesión
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mb-3 row text-center">
+                    <div class="col">
+                      Olvidaste tu contraseña?
+                      <a [routerLink]="['/restaurar']">Click aquí</a>
+                      <br />
+                      Aún no tienes cuenta?
+                      <a [routerLink]="['/registro']">Click aquí</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+  

@@ -1,0 +1,38 @@
+.bg-welcome {
+    background-image: url("../../../assets/img/robot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-welcome span {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.text-welcome p {
+    text-transform: uppercase;
+    line-height: 3;
+    letter-spacing: 10px;
+    color: white;
+    font-size: x-large;
+}
+
+.text-welcome h2 {
+    text-transform: uppercase;
+    line-height: 3;
+    font-weight: 500;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.text-welcome h1 {
+    color: var(--black-color);
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 8em;
+    line-height: 1.5;
+    letter-spacing: 10px;
+}

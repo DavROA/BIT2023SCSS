@@ -1,0 +1,57 @@
+:root {
+  /* Color Navbar*/
+  --color-black-navbar: #070509;
+  /* Color Button Welcome */
+  --color-bue-button: #4C5CFF;
+
+  /* COLOR PALETTE FINAL */
+  --color-green-primary: #0dca68;
+  /* Paleta de Verdes */
+  --green-primary: #416d50;
+  --green-secondary: #76b536;
+  --gren-light: #e9f3ed;
+  --green-dark: #00210b;
+  /* PALETA DE COLORES 2OP */
+  --green-primary2: #2d8d79;
+  --green-secondary2: #8fc79a;
+  --green-dark2: #5e9387;
+  --green-light2: #cee9b6;
+  /* PALETA DE COLORES 2RA OPCIÓN */
+  --green-primary3: #63cc95;
+  --green-secondary3: #b4f1b2;
+  --green-dark3: #0d131c;
+  /* PALETA DE COLORES ARCADIA */
+  --green-blue-arcadia: #a7f2e4;
+  --green-color-text: #212121;
+  --green-color-hover-link: #4abf2a;
+  --green-lemon-arcadia: #98d936;
+  --green-coffe-light-arcadia: #f2ece4;
+  /* PALETA COLORES COMPLEMENTARIOS */
+  --green-color-primary: #d5f5cc;
+  --green-bg1-btn: #004036;
+  --green-bg2-btn: #11ff84;
+  /* PALETA DE GRISES */
+  --grey-border-btnsocial: #e9ecef;
+  --grey-color-btnsocial: #666;
+  --grey-color-text: #999999;
+  --grey-text-muted: #acacac;
+  --grey-light: #f9f9f9;
+  --white-color: #ffffff;
+  --grey-dark: #363636;
+  --black-color: #000000;
+  /* COLORES ICONOS REDES */
+  --orange-color: #fa4529;
+  --color-logo-twwitter: #1da1f2;
+  --color-logo-face: #4867aa;
+  --color-logo-ig: #f70182;
+  --color-logo-github: #000;
+  --color-logo-gitlab: #db4128;
+}
+
+.color-bit {
+  background-color: #070509;
+}
+
+.bitmx {
+  max-width: 200px;
+}
