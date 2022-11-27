@@ -10,7 +10,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   // URL = "http://127.0.0.1/php_bit";
-  URL = "http://127.0.0.1/rene";
+  URL = "http://127.0.0.1/API";
 
   login(login: any): Observable<Request> {
     return this.http.get<Request>(
