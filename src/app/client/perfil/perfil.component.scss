@@ -1,27 +1,61 @@
+*{
+    align-content: center;
+    box-sizing: border-box;
+    font-style: normal;
+}
 .img {
     border-radius: 50%;
     max-width: 250px;
 }
-
-.texto_primer_cuadro {
-    width: 137px;
-    height: 88px;
-    left: 95px;
-    top: 186px;
+.Change_Profile{
     font-family: 'Century Gothic';
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #105E6C;
+    align-self: center;
 }
-
+.info_profile{
+    padding: 0;
+}
 .perfil-titulo {
-    color: var(--black-color);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    line-height: 1;
-    letter-spacing: 10px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-align: center;
+}
+.form-label{
+    text-align:end;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: #444444;
+    padding: 10px;
+}
+.form-control{
+    box-sizing: border-box;
+    background: #FCFCFC;
+    border: 1px solid #929292;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.Change_Password{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    text-align: center;
+    padding: 15px;
+}
+.Color_password{
+    color: #B91313 !important;
 }

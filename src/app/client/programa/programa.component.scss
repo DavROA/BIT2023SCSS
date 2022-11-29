@@ -1,3 +1,31 @@
+.container{
+    margin-bottom:5rem;
+}
+table{
+    border: 1px solid black;
+    align-items: center;
+}
+tr{
+    background: #FEFEFE;
+    border: 1px solid #CBCBCB;
+    height: 50px;
+}
+td,th{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+.titulo{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
 .xd {
     background-color: yellow;
 }

@@ -1,34 +1,261 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    font-style: normal;
+}
 .bg-welcome {
-    background-image: url("../../../assets/img/robot.jpg");
+    height: 100vh;
+    background-image: url("../../../assets/img/fondo-principal.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-color: #050306;
 }
-
+header{
+    padding-top: 3rem;
+}
 .text-welcome span {
+    font-family: 'Bowlby One SC';
+    font-size: 6rem !important;
+    color: #FFFFFF;
+    letter-spacing: 10px;
+}
+.text-welcome-principal h2 {
+    font-size: 45px !important;
+    font-weight: 700;
+    color: #FFFFFF;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Century Gothic';
+}
+.hr {
+    border-color: white;
+    border-style: solid;
+    color: #FFFFFF;
+}
+.text-welcome-principal p {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: 'Century Gothic';
+}
+.divider{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: lighter;
+    margin: 2rem;
+}
+.btn_gral {
+    /*text*/
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    /*boton*/
+    letter-spacing: 1px;
+    background: #9100FF;
+    border: 1px solid #9100FF;
+    box-shadow: 0px 2px 9px -1px #9100FF;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    margin: 2rem;
+    padding: 1rem;
+}
+.text-normal div{
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 1;
+    text-align: center;
+    color: #292929;
+    background-color: #ffffff !important;
+    align-content: center;
+}
+.text-normal h1 {
+    color: var(--black-color);
     font-weight: 1000;
-    letter-spacing: 10px;
-    color: white;
-}
-
-.text-welcome p {
     text-transform: uppercase;
-    line-height: 3;
+    font-size: 50px;
+    line-height: 1;
     letter-spacing: 10px;
-    color: white;
-    font-size: x-large;
+    font-family: 'Century Gothic';
 }
-
-.text-welcome h2 {
+.text-normal p {
     text-transform: uppercase;
-    line-height: 3;
-    font-weight: 500;
-    letter-spacing: 10px;
-    color: white;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--black-color);
+    font-family: 'Century Gothic';
+}
+.text-card {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #01022F;
+    text-align: center;
+    font-family: 'Century Gothic';
+    padding: 3rem;
+}
+.card {
+    border-radius: 20px;
+    background: #F4F4F4;
+    max-width: 24rem;
+    max-height: 24rem; 
 }
 
-.text-welcome h1 {
+.card-title{
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--black-color);
+    font-family: 'Century Gothic';
+}
+.card-text{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #171616;
+} 
+/* .card-text-list{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #171616;
+    margin: 25px;
+} */
+.img-conten{
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+}
+.img-conten-p{
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+.text-planes h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #01022F;
+}
+.text-planes h2 {
+    color: var(--black-color);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px ;
+    text-align: center;
+}
+.cardNew {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px !important;
+    padding: 0%;
+    margin: 0%;
+}
+.card-header {
+    position:relative;
+    row-gap: 0px;
+    padding: 25px 0px;
+}  
+.titulo-card1 {
+    color: #FFFFFF;
+    height: 6rem;
+    width: 100%;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: bold !important;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    background: linear-gradient(96.05deg, #107EFF 13.26%, #A42CFF 91.28%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 0 0;
+    padding: 2rem;
+    margin: 0%;
+}
+.card-bodyNew {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: #F8F8F8;
+    border-color: #CBCBCB;
+    border-radius: 0 0 25px 25px !important;
+    height: 28rem;
+    width: 100%;
+}
+.text-card h1 {
+    color: #4B4B4B;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 10px;
+    font-family: 'Century Gothic';
+}
+.text-card h1>strong{
+    color: #4B4B4B;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 49px;
+    letter-spacing: 2px;
+    font-family: 'Century Gothic';
+}
+.text-card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #575757;
+    padding-top: 1rem;
+    text-align: center !important;
+}
+
+.titulo-card2 {
+    height: 6rem;
+    width: 100%;
+    background: linear-gradient(96.05deg, #D6DB00 13.26%, #4BCE00 91.28%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 0 0;
+    padding: 2rem;
+}
+.title-card{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    font-family: 'Century Gothic';
+}
+.text-patrocinador {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #01022F;
+    text-align: center;
+    font-family: 'Century Gothic';
+    padding: .5rem;
+    padding-top: 0% !important;
+}
+
+
+/*/otrkdjddddddddddddddddddddddddddddd*/
+///new cards
+/* .text-welcome h1 {
     color: var(--black-color);
     font-weight: 1000;
     text-transform: uppercase;
@@ -36,7 +263,6 @@
     line-height: 1.5;
     letter-spacing: 10px;
 }
-
 .text-normal span {
     text-transform: uppercase;
     font-weight: 1000;
@@ -44,13 +270,6 @@
     color: var(--black-color);
 }
 
-.text-normal p {
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 10px;
-    font-size: x-large;
-    color: var(--black-color);
-}
 
 .text-normal h2 {
     text-transform: uppercase;
@@ -60,44 +279,9 @@
     color: var(--black-color);
 }
 
-.text-normal h1 {
-    color: var(--black-color);
-    font-weight: 1000;
-    text-transform: uppercase;
-    font-size: 8em;
-    line-height: 1;
-    letter-spacing: 10px;
-}
 
-.hr {
-    border: none;
-    height: 10px;
-    background-color: white;
-}
 
-.btn_gral {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 1rem 1.5rem;
-    letter-spacing: 1px;
-    border: solid transparent;
-    border-radius: 0.3rem;
-    align-items: center;
-    justify-content: center;
-    // margin: 0 1rem 1rem 0;
-    line-height: 1.5;
-    vertical-align: middle;
-    display: inline-block;
-    font-weight: 600;
-}
 
-.card-header {
-    padding: 0.5rem 1rem;
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}  
 
 .btn_primary {
     background-color: var(--color-bue-button);
@@ -111,7 +295,7 @@
 .btn_primary:hover {
     color: var(--grey-light);
     background-color: var(--color-bue-button);
-    /* background-color: #09914b; */
+    // background-color: #09914b; 
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
@@ -122,67 +306,10 @@
     color: var(--black-color);
 }
 
-.text-card p {
-    text-transform: uppercase;
-    font-size: x-large;
-    color: var(--black-color);
-}
 
-.text-card h2 {
-    color: var(--black-color);
-    font-weight: 1000;
-    text-transform: uppercase;
-    font-size: 5em;
-    line-height: 1;
-    letter-spacing: 10px;
-}
 
-.text-card h1 {
-    color: var(--black-color);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 3em;
-    line-height: 1;
-    letter-spacing: 10px;
-}
 
-.card {
-    border: none;
-}
 
-.cardNew {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    // border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-}
-
-.card-bodyNew {
-    flex: 1 1 auto;
-    padding: 1rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    background-color: #F8F8F8;
-    border-color: #CBCBCB;
-  }
-
-.titulo-card1 {
-    background-image: radial-gradient(circle at 83.03% 41.15%,
-            #e157eb 0,
-            #c54cee 16.67%,
-            #a443f0 33.33%,
-            #783cf2 50%,
-            #2c38f4 66.67%,
-            #0038f5 83.33%,
-            #003af6 100%);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border: transparent;
-}
 
 .titulo-card2 {
     background-image: radial-gradient(circle at -20.44% 56.16%,
@@ -223,23 +350,6 @@
     font-size: x-large;
 }
 
-.text-planes h2 {
-    color: var(--black-color);
-    font-weight: 1000;
-    text-transform: uppercase;
-    font-size: 5em;
-    line-height: 1;
-    letter-spacing: 10px;
-}
-
-.text-planes h1 {
-    color: var(--black-color);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 3em;
-    line-height: 1;
-    letter-spacing: 10px;
-}
 
 .text-planes h3 {
     color: var(--white-color);
@@ -248,4 +358,4 @@
     font-size: 2em;
     line-height: 1;
     letter-spacing: 10px;
-}
+} */

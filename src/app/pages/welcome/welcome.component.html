@@ -3,35 +3,35 @@
     <div class="d-flex h-100 text-center bg-welcome">
         <div class="d-flex w-100 h-100 p-3 bg-dark bg-opacity-50 mx-auto 5 flex-column">
             <header class="mb-auto text-welcome">
-                <h1 class=""><span>BIT 2023</span></h1>
+                <h1><span>BIT 2023</span></h1>
             </header>
-            <main class="px-3 text-welcome">
-                <h2 class="display-1">#Impusa tu realidad</h2>
+            <main class="px-3 text-welcome-principal">
+                <h2 class="display-1">#Impulsa tu realidad</h2>
                 <hr class="hr" />
                 <div class="col-12">
-                    <div class="row text-welcome">
-                        <div class="col-5" align="center">
+                    <div class="row text-welcome-principal">
+                        <div class="col-5" >
                             <p>Marzo 24 y 25, 2023, 09:05 AM</p>
                         </div>
-                        <div class="col-2" align="center">
-                            <span>|</span>
+                        <div class="col-2" >
+                            <span class="divider" >|</span>
                         </div>
-                        <div class="col-5" align="center">
-                            <p>Casa Don Luis Jardín Boutique, Oaxaca</p>
+                        <div class="col-5">
+                            <p style="text-align: left;" >Casa Don Luis Jardín Boutique, Oaxaca</p>
                         </div>
                     </div>
                 </div>
-                <a [routerLink]="['/registro']" class="btn_gral btn_primary btn btn-lg">Registrarse</a>
+                <a [routerLink]="['/registro']" class="btn_gral btn btn-lg">Registrate</a>
             </main>
         </div>
     </div>
     <div class="col-12 p-5">
         <div class="row text-normal" align="center">
-            <div class="col-4">
+            <div class="col-4" style="border-right: 3px solid #CBCBCB ;">
                 <h1>2,000+</h1>
                 <p>ASISTENTES</p>
             </div>
-            <div class="col-4">
+            <div class="col-4" style="border-right: 3px solid #CBCBCB ;" >
                 <h1>20+</h1>
                 <p>CONFERENCISTAS</p>
             </div>
@@ -40,14 +40,14 @@
                 <p>DÍAS</p>
             </div>
         </div>
-        <div class="col-12 p-5 text-card">
-            <h2 align="center" class="py-5">Business, Innovation & Technology</h2>
+        <div class="col-12">
+            <h2 class="text-card">Business, Innovation & Technology</h2>
             <div class="col-12">
-                <div class="row" align="center">
+                <div class="row">
                     <div class="col-4">
-                        <div class="card" style="height: 24rem">
+                        <div class="card">
                             <div class="card-body">
-                                <h1><strong>¿Qué es el BIT MX?</strong></h1>
+                                <h1 class="card-title"><strong>¿QUÉ ES EL BIT MX?</strong></h1>
                                 <p class="card-text">
                                     Es la plataforma que busca desarrollar, impulsar e
                                     intercambiar conocimiento sobre nuevos negocios, innovación y
@@ -58,16 +58,15 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="height: 24rem">
-                            <img src="./assets/img/ejemplo-congreso.jpg" style="height: 24rem" />
+                        <div class="card ">
+                            <img class="img-conten"  src="./assets/img/ejemplo-congreso.jpg" style="height: 15rem;" />
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="height: 24rem">
+                        <div class="card" >
                             <div class="card-body">
-                                <h1><strong>PRESENTADO POR</strong></h1>
-                                <img src="./assets/img/halcones.png" style="height: 8rem" />
-                                <img src="./assets/img/halcones.png" style="height: 8rem" />
+                                <h1 class="card-title"><strong>PRESENTADO POR</strong></h1>
+                                <img class="img-conten-p" src="./assets/img/img-info4.png" />
                             </div>
                         </div>
                     </div>
@@ -75,85 +74,83 @@
                 <br />
                 <div class="row">
                     <div class="col-4">
-                        <div class="card" style="height: 24rem">
-                            <img src="./assets/img/ejemplo-congreso.jpg" style="height: 24rem" />
+                        <div class="card">
+                            <img  class="img-conten" src="../../../assets/img/img-info-1.jpg"  />
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="height: 24rem">
+                        <div class="card">
                             <div class="card-body">
-                                <h1 align="center">
+                                <h1 class="card-title">
                                     <strong>¿QUIÉNES ASISTIRÁN AL BIT MX?</strong>
                                 </h1>
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i> Estudiantes universitarios
+                                <p class="card-text-list">
+                                    <i class="fa-regular fa-star">Estudiantes universitarios.</i>
                                 </p>
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i> Emprendedores en potencia
+                                <p class="card-text-list">
+                                    <i class="fa-regular fa-star"></i> Emprendedores en potencia.
                                 </p>
-                                <p class="card-text">
-                                    <i class="fa-regular fa-star"></i> Aliados estratégicos
+                                <p class="card-text-list">
+                                    <i class="fa-regular fa-star"></i> Aliados estratégicos.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card" style="height: 24rem">
-                            <img src="./assets/img/ejemplo-congreso.jpg" style="height: 24rem" />
+                        <div class="card">
+                            <img class="img-conten" src="../../../assets/img/img-info3.png" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-12 p-5 text-planes">
-            <h2 align="center">NUESTROS PLANES</h2>
-            <h1 align="center">Obtén tus entradas</h1>
+            <h1 >NUESTROS PLANES</h1>
+            <h2 >Obtén tus entradas</h2>
             <div class="row">
-                <div class="p-5 col-6" align="center">
+                <div class="p-5 col-6">
                     <div class="cardNew">
-                        <div class="card-header text-center titulo-card1">
-                            <h3>Estudiantes</h3>
+                        <div class="card-header titulo-card1">
+                            <h3 class="title-card" >ESTUDIANTE</h3>
                         </div>
                         <div class="card-bodyNew">
-                            <div class="mb-3 row justify-content-md-center" align="center">
+                            <div class="mb-3 row justify-content-md-center">
                                 <div class="col-12 text-card">
-                                    <h1>$680.mxn</h1>
+                                    <h1>$680<strong>MX</strong></h1>
                                     <hr />
-                                    <p>Acceso al evento por zoom</p>
+                                    <p>Acceso al evento por zoom.</p>
                                     <hr />
                                     <p>
-                                        Acceso presencial (aforo limitado previo registro por día
+                                        Acceso presencial <br>(Aforo limitado previo al registro por día).
                                     </p>
                                     <hr />
-                                    <p>1 BIT Kit</p>
-                                    <hr /><br>
-                                    <a [routerLink]="['/registro']"
-                                        class="btn_gral btn_primary btn btn-lg">Registrarse</a>
+                                    <p>1 BIT Kit.</p>
+                                    <hr />
+                                    <a [routerLink]="['/registro']" class="btn_gral btn_primary btn btn-lg">Registrarse</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="p-5 col-6" align="center">
+                <div class="p-5 col-6">
                     <div class="cardNew">
-                        <div class="card-header text-center titulo-card2">
-                            <h3>EXTERNO</h3>
+                        <div class="card-header titulo-card2">
+                            <h3 class="title-card">EXTERNO</h3>
                         </div>
                         <div class="card-bodyNew">
-                            <div class="mb-3 row justify-content-md-center" align="center">
+                            <div class="mb-3 row justify-content-md-center">
                                 <div class="col-12 text-card">
-                                    <h1>$980.mxn</h1>
+                                    <h1>$980<strong>MX</strong></h1>
                                     <hr />
                                     <p>Acceso al evento por zoom</p>
                                     <hr />
                                     <p>
-                                        Acceso presencial (aforo limitado previo registro por día
+                                        Acceso presencial <br>(Aforo limitado previo al registro por día).
                                     </p>
                                     <hr />
                                     <p>1 BIT Kit</p>
-                                    <hr /><br>
-                                    <a [routerLink]="['/registro']"
-                                        class="btn_gral btn_primary btn btn-lg">Registrarse</a>
+                                    <hr />
+                                    <a [routerLink]="['/registro']" class="btn_gral btn_primary btn btn-lg">Registrarse</a>
                                 </div>
                             </div>
                         </div>
@@ -161,8 +158,8 @@
                 </div>
             </div>
         </div>
-        <div class=" col-12 p-5 text-planes">
-            <h2 align="center">PATROCINADORES</h2>
+        <div class=" col-12">
+            <h2 class="text-patrocinador" >Patrocinadores</h2>
             <div class="row" align="center">
                 <div class="col-3"><img src="./assets/img/halcones.png" style="height: 8rem" /></div>
                 <div class="col-3"><img src="./assets/img/halcones.png" style="height: 8rem" /></div>
