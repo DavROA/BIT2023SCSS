@@ -1,1 +1,49 @@
-<p>navbar-client works!</p>
+<nav class="navbar color-bit">
+    <div class="container-fluid">
+      <img src="./assets/img/logo.png" alt="bitmx" class="bitmx" />
+      <ul class="nav justify-content-end">
+        <li class="nav-item my-2 px-4 px-xxl-4">
+          <a class="nav-link" [routerLink]="['/planes']">Planes</a>
+        </li>
+        <li class="nav-item my-2 px-4 px-xxl-4">
+          <a class="nav-link" [routerLink]="['/qr']">Boleto</a>
+        </li>
+        <li class="nav-item my-2 px-4 px-xxl-4">
+          <a class="nav-link" [routerLink]="['/talleres']">Talleres</a>
+        </li>
+        <li class="nav-item my-2 px-4 px-xxl-4">
+          <a class="nav-link" [routerLink]="['/perfil']">Perfil</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <div class="container-fluid">
+          <img src="./assets/img/logo.png" alt="bitmx" class="bitmx" />
+          <ul class="nav justify-content-end">
+            <li class="nav-item my-2 px-4 px-xxl-4">
+              <a class="nav-link" [routerLink]="['/planes']">Planes</a>
+            </li>
+            <li class="nav-item my-2 px-4 px-xxl-4">
+              <a class="nav-link" [routerLink]="['/qr']">Boleto</a>
+            </li>
+            <li class="nav-item my-2 px-4 px-xxl-4">
+              <a class="nav-link" [routerLink]="['/talleres']">Talleres</a>
+            </li>
+            <li class="nav-item my-2 px-4 px-xxl-4">
+              <a class="nav-link" [routerLink]="['/perfil']">Perfil</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>

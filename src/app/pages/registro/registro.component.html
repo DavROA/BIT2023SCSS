@@ -16,19 +16,30 @@
                     <div class="col-md-8">
                         <div class="card-body cuadro_card">
                             <div class="row">
-                                <div class="col-6">
-                                    <span><strong>Registro</strong></span>
-                                </div>
-                                <div class="col-6" [routerLink]="['/login']">Login</div>
+                                
+                                <nav class="navbar color-bit">
+                                    <div class="container-fluid">
+                                      <ul class="nav justify-content-end">
+                                        <li class="nav-item my-2 px-4 px-xxl-4">
+                                          <a class="nav-link active" [routerLink]="['/registro']">Registro</a>
+                                        </li>
+                                        <li class="nav-item my-2 px-4 px-xxl-4">
+                                          <a class="nav-link" [routerLink]="['/login']">Login</a>
+                                        </li>
+                                        
+                                      </ul>
+                                    </div>
+                                  </nav>
+                                
                             </div>
                             <hr />
                             <h5 class="card-title">Bienvenido de nuevo</h5>
                             <form autocomplete="off" [formGroup]="miFormulario">
                                 <div class="mb-3 row justify-content-md-center" align="center">
                                     <div class="col-12">
-                                        <label class="form-label fw-bold">Correo:</label>
+                                        <!-- <label class="form-label fw-bold">Correo:</label> !-->
                                         <input type="text" class="form-control" formControlName="correo"
-                                            placeholder="Ingrese su correo" [pattern]="emailCheck"/>
+                                            placeholder="Ingrese su correo electrónico" [pattern]="emailCheck" />
                                         <div>
                                             <span *ngIf="emailReq()" class="form-text text-danger">
                                                 Dirección de correo no válida</span>
@@ -42,12 +53,12 @@
 
                                 <div class="mb-3 row justify-content-md-center" align="center">
                                     <div class="col-12">
-                                        <label class="form-label fw-bold">Confirmar correo:</label>
+                                        <!-- <label class="form-label fw-bold">Confirmar correo:</label> !-->
                                         <input type="email" class="form-control" formControlName="confirmCorreo"
-                                            placeholder="Confirme su correo electronico" [pattern]="emailCheck" />
+                                            placeholder="Confirme su correo electrónico" [pattern]="emailCheck" />
                                         <div [hidden]="correoReq()">
-                                            <span class="form-text text-danger"
-                                                *ngIf="campoValido('confirmCorreo')">Los correos no coinciden</span>
+                                            <span class="form-text text-danger" *ngIf="campoValido('confirmCorreo')">Los
+                                                correos no coinciden</span>
                                         </div>
                                         <div>
                                             <span *ngIf="correoReq()" class="form-text text-danger">
@@ -58,7 +69,7 @@
 
                                 <div class="mb-3 row justify-content-md-center" align="center">
                                     <div class="col-12">
-                                        <label class="form-label fw-bold">Contraseña:</label>
+                                        <!-- <label class="form-label fw-bold">Contraseña:</label> !-->
                                         <input type="password" class="form-control" formControlName="pass"
                                             placeholder="Ingrese su contraseña" />
                                         <span class="form-text text-danger" *ngIf="campoValido('pass')">Mínimo 8
@@ -69,7 +80,7 @@
                                 </div>
                                 <div class="mb-3 row justify-content-md-center" align="center">
                                     <div class="col-12">
-                                        <label class="form-label fw-bold">Confirma tu contraseña:</label>
+                                        <!-- <label class="form-label fw-bold">Confirma tu contraseña:</label> !-->
                                         <input type="password" class="form-control" formControlName="confirmPassword"
                                             placeholder="Confirme su contraseña" />
                                         <div [hidden]="passReq()">
@@ -90,7 +101,7 @@
                                 </div>
                                 <div class="mb-3 row text-center">
                                     <div class="col">
-                                        Ya tienes cuenta?
+                                        ¿Ya tienes cuenta?
                                         <a [routerLink]="['/login']">Click aquí</a>
                                     </div>
                                 </div>

@@ -15,6 +15,7 @@
     color: white;
 }
 
+
 .primer_cuadro_login {
     background-color: #020C27;
 }
@@ -35,7 +36,7 @@
     left: 95px;
     top: 186px;
     font-family: 'Century Gothic';
-    font-style: normal;
+    font-style:unset;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -45,6 +46,7 @@
 
 .cuadro_card {
     background-color: #F8F8F8;
+    //font-family: 'century gothic';
 }
 
 .img_cuadro {
@@ -52,3 +54,34 @@
     height: 141px;
     left: 54px;
 }
+
+
+  .color-bit {
+    background-color:#F8F8F8;
+  }
+  
+  
+  .nav-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 1.075rem;
+    line-height: 1;
+    text-underline-offset: 10px;
+    margin: .1rem 2rem;
+    padding: .5rem .8rem;
+  }
+  .nav-link:hover, .nav-link:focus{
+    color: black;
+    text-decoration: underline  3px royalblue;
+  }
+  .nav-link:focus + .nav-link, .nav-link:focus{
+    color: royalblue;
+  }
+  .nav-link:active{
+    color: royalblue;
+  }
