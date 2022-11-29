@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ClientService {
 
-  URL = "http://127.0.0.1/rene";
+  URL = "http://127.0.0.1/API";
 
   constructor(private http: HttpClient) { }
 
