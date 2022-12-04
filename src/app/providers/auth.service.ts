@@ -24,6 +24,12 @@ export class AuthService {
     );
   }
 
+  registroAdmin(registro: any): Observable<Request>{
+    return this.http.post<Request>(
+      `${this.URL}/auth/registroAdmin.php`, registro
+    );
+  }
+
   codigo(to: any){
     return this.http.get(`https://mudate.000webhostapp.com/correonew.php?to=${to}&from=braquetesss@gmail.com`);
   }
@@ -48,6 +54,21 @@ export class AuthService {
     return this.http.post<Request>(
       `${this.URL}/auth/actualizarRegistro.php`, registro
     );
+  }
+
+  
+  actualizarUsuarioExterno(registro: any): Observable<Request>{
+    return this.http.post<Request>(
+      `${this.URL}/auth/actualizarRegistroExterno.php`, registro
+    );
+  }
+
+  actualizarImagen(url: any, id: any){
+    return this.http.get(`${this.URL}/auth/actualizarImagen.php?id=${id}&url=${url}`);
+  }
+  
+  actualizarPDF(url: any, id: any){
+    return this.http.get(`${this.URL}/auth/actualizarPDF.php?id=${id}&pdf=${url}`);
   }
 
 }

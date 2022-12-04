@@ -23,6 +23,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { InicioComponent } from './admin/inicio/inicio.component';
+import { ListarAdminComponent } from './admin/listar-admin/listar-admin.component';
+import { CrearAdminComponent } from './admin/crear-admin/crear-admin.component';
+import { CodigoAdminComponent } from './admin/codigo-admin/codigo-admin.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { HttpClientModule } from '@angular/common/http';
     WelcomeComponent,
     FooterComponent,
     NavbarComponent,
-    NavbarClientComponent
+    NavbarClientComponent,
+    InicioComponent,
+    ListarAdminComponent,
+    CrearAdminComponent,
+    CodigoAdminComponent
   ],
   imports: [
     BrowserModule,

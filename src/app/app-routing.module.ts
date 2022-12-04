@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CodigoAdminComponent } from './admin/codigo-admin/codigo-admin.component';
+import { CrearAdminComponent } from './admin/crear-admin/crear-admin.component';
+import { ListarAdminComponent } from './admin/listar-admin/listar-admin.component';
 import { CompletarComponent } from './client/completar/completar.component';
 import { EleccionComponent } from './client/eleccion/eleccion.component';
 import { HomeComponent } from './client/home/home.component';
@@ -77,6 +80,18 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'listar-admin',
+    component: ListarAdminComponent
+  },
+  {
+    path: 'crear-admin',
+    component: CrearAdminComponent
+  },
+  {
+    path: 'codigo-admin',
+    component: CodigoAdminComponent
   },
   {
     path: '',
