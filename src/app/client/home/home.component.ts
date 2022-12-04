@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
       this.user = 'xd';
     }else{
       this.user = this.usuario.correo;
+      this.user = this.usuario.nombre;
     }
   }
 

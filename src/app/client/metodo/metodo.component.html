@@ -9,20 +9,22 @@
                 <div class="col-3 titulo-completar"><hr></div>
                 <div class="col-1 titulo-completar">Talleres</div>
             </div>
-        </div>
+        </div> 
         <div class="card ">
             <div class="card-header">
                 <h3 class="fw-bold">Método de pago</h3>
             </div>
             <div class="card-body" align="center">
                 <h3 class="subtitulo">Realiza tu pago descargando el siguiente archivo.</h3>
-                <form>
-                    <p>
-                      Sube un archivo:
-                      <input type="file" name="archivosubido">
-                    </p>
-                    <button (click)="file()" class="btn btn-primary" type="submit" value="Enviar datos">Enviar</button>
-                  </form>
+                <section>
+                    <div class="forms">
+                        <label for="title">{{msn}}</label>
+                        <input type="file" name="file" (change)="subiendoando($event)" accept="pdf/*" *ngIf="!loader" />
+                        <div *ngIf="loader">
+                            <img src="./assets/loading.gif" />
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

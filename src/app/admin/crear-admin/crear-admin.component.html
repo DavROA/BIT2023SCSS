@@ -1,0 +1,129 @@
+<app-navbar-client></app-navbar-client>
+<section id="hero">
+    <div class="container">
+        <div class="p-5 col-12" align="center">
+            <div class="card mb-3" style="max-width: 720px">
+                <br>
+                <h5 class="card-title">Bienvenido de nuevo</h5><br>
+                <form autocomplete="off" [formGroup]="miFormulario">
+                    <div class="mb-3 row justify-content-md-center" align="center">
+                        <div class="col-6">
+                            <!-- <label class="form-label fw-bold">Correo:</label> !-->
+                            <input type="text" class="form-control" formControlName="correo"
+                                placeholder="Ingrese su correo electrónico" [pattern]="emailCheck" />
+                            <div>
+                                <span *ngIf="emailReq()" class="form-text text-danger">Dirección de correo no
+                                    válida</span>
+                            </div>
+                            <div>
+                                <span *ngIf="emailPattern()" class="form-text text-danger">Patrón incorrecto</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <!-- <label class="form-label fw-bold">Confirmar correo:</label> !-->
+                            <input type="email" class="form-control" formControlName="confirmCorreo"
+                                placeholder="Confirme su correo electrónico" [pattern]="emailCheck" />
+                            <div [hidden]="correoReq()">
+                                <span class="form-text text-danger" *ngIf="campoValido('confirmCorreo')">Los
+                                    correos no coinciden</span>
+                            </div>
+                            <div>
+                                <span *ngIf="correoReq()" class="form-text text-danger">
+                                    Este campo es requerido</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3 row justify-content-md-center" align="center">
+                        <div class="col-6">
+                            <!-- <label class="form-label fw-bold">Contraseña:</label> !-->
+                            <input type="password" class="form-control" formControlName="pass"
+                                placeholder="Ingrese su contraseña" />
+                            <span class="form-text text-danger" *ngIf="campoValido('pass')">Mínimo 8
+                                caracteres</span>
+                        </div>
+
+                        <!-- <input type="hidden" value="1" class="form-control" formControlName="perfil" /> -->
+
+                        <div class="col-6">
+                            <!-- <label class="form-label fw-bold">Confirma tu contraseña:</label> !-->
+                            <input type="password" class="form-control" formControlName="confirmPassword"
+                                placeholder="Confirme su contraseña" />
+                            <div [hidden]="passReq()">
+                                <span class="form-text text-danger" *ngIf="campoValido('confirmPassword')">La contraseña
+                                    no coinciden</span>
+                            </div>
+                            <span *ngIf="passReq()" class="form-text text-danger">
+                                Este campo es requerido</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3 row justify-content-md-center" align="center">
+                        <div class="col-4">
+                            <label class="form-label fw-bold">Nombre:</label>
+                            <input type="text" class="form-control" formControlName="nombre"
+                                placeholder="Ingrese su nombre">
+                            <span *ngIf="campoValido('nombre')" class="form-text text-danger">
+                                Campo obligatorio</span>
+                            <!-- <span class="form-text text-danger">Mínimo 4 letras</span>  -->
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label fw-bold">Primer Apellido:</label>
+                            <input type="text" class="form-control" formControlName="apellido_paterno"
+                                placeholder="Ingrese su Apellido">
+                            <span *ngIf="campoValido('apellido_paterno')" class="form-text text-danger">
+                                Campo obligatorio</span>
+                            <!-- <span class="form-text text-danger">Mínimo 4 letras</span>  -->
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label fw-bold">Segundo Apellido:</label>
+                            <input type="text" class="form-control" formControlName="apellido_materno"
+                                placeholder="Ingrese su Apellido">
+                            <span *ngIf="campoValido('apellido_materno')" class="form-text text-danger">
+                                Campo obligatorio</span>
+                            <!-- <span class="form-text text-danger">Mínimo 4 letras</span>  -->
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row justify-content-md-center" align="center">
+                        <div class="col-6">
+                            <label class="form-label fw-bold">Carrera:</label>
+                            <input type="text" class="form-control" formControlName="carrera"
+                                placeholder="Ingrese su nombre de usuario">
+                            <span *ngIf="campoValido('carrera')" class="form-text text-danger">
+                                Campo obligatorio</span>
+                            <!-- <span class="form-text text-danger">Mínimo 4 letras</span>  -->
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label fw-bold">Teléfono:</label>
+                            <input type="text" class="form-control" formControlName="celular"
+                                placeholder="Ingrese su nombre de usuario">
+                            <span *ngIf="campoValido('celular')" class="form-text text-danger">
+                                Campo obligatorio</span>
+                            <!-- <span class="form-text text-danger">Mínimo 4 letras</span>  -->
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row text-center">
+                        <div class="col">
+                            <button type="submit" [disabled]="miFormulario.invalid" class="btn btn-primary btn-lg"
+                                (click)="save()">
+                                Guardar
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- <button type="text" class="btn btn-secondary btn-lg mr-3" ruterLink="/listar-admin">Volver</button>  -->
