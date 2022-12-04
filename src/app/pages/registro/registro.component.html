@@ -4,7 +4,7 @@
         <div class="p-5 col-12" align="center">
             <div class="card mb-3" style="max-width: 720px">
                 <div class="row g-0">
-                    <div class="col-md-4 primer_cuadro_login">
+                    <div class="col-md-3 primer_cuadro_login">
                         <hr />
                         <hr />
                         <hr />
@@ -13,15 +13,14 @@
                         </p>
                         <img src="./assets/img/login_mano.png" alt="" />
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="card-body cuadro_card">
                             <div class="row">
-                                
                                 <nav class="navbar color-bit">
                                     <div class="container-fluid">
                                       <ul class="nav justify-content-end">
                                         <li class="nav-item my-2 px-4 px-xxl-4">
-                                          <a class="nav-link active" [routerLink]="['/registro']">Registro</a>
+                                          <a class="nav-link" [routerLink]="['/registro']">Registro</a>
                                         </li>
                                         <li class="nav-item my-2 px-4 px-xxl-4">
                                           <a class="nav-link" [routerLink]="['/login']">Login</a>
@@ -30,14 +29,12 @@
                                       </ul>
                                     </div>
                                   </nav>
-                                
                             </div>
                             <hr />
-                            <h5 class="card-title">Bienvenido de nuevo</h5>
+                            <h5 class="card-title">Crea una cuenta</h5>
                             <form autocomplete="off" [formGroup]="miFormulario">
                                 <div class="mb-3 row justify-content-md-center" align="center">
                                     <div class="col-12">
-                                        <!-- <label class="form-label fw-bold">Correo:</label> !-->
                                         <input type="text" class="form-control" formControlName="correo"
                                             placeholder="Ingrese su correo electrónico" [pattern]="emailCheck" />
                                         <div>
@@ -53,7 +50,6 @@
 
                                 <div class="mb-3 row justify-content-md-center" align="center">
                                     <div class="col-12">
-                                        <!-- <label class="form-label fw-bold">Confirmar correo:</label> !-->
                                         <input type="email" class="form-control" formControlName="confirmCorreo"
                                             placeholder="Confirme su correo electrónico" [pattern]="emailCheck" />
                                         <div [hidden]="correoReq()">
@@ -95,7 +91,7 @@
                                     <div class="col">
                                         <button type="submit" [disabled]="miFormulario.invalid"
                                             class="btn btn-primary btn-lg" (click)="save()">
-                                            Guardar
+                                            Crear cuenta
                                         </button>
                                     </div>
                                 </div>

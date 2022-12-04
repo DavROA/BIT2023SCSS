@@ -1,6 +1,7 @@
 <app-navbar></app-navbar>
 <!-- ======= Hero Section ======= -->
-<section id="hero">
+<div>
+  <section id="hero" >
     <div class="container">
       <div class="p-5 col-6 offset-3" align="center">
         <div class="card">
@@ -12,14 +13,14 @@
               <div class="mb-3 row justify-content-md-center" align="center">
                   <div class="col-12">
                       <label class="form-label fw-bold">Confirma tu correo electronico</label>
-                      <p>¡Último paso! Para proteger tu cuenta, escribe el código que te enviamos a {{correo}}</p>
+                      <p class="msg">¡Último paso! Para proteger tu cuenta, escribe el código que te enviamos a {{correo}}</p>
                   </div>
               </div>
               <div class="mb-3 row justify-content-md-center">
                 <div class="col-12">
-                  <label class="form-label fw-bold">Codigo:</label>
+                  <label class="form-label fw-bold">Código:</label>
                   <input type="text" class="form-control" formControlName="codigo"
-                          placeholder="Ingrese su nombre de usuario">
+                          placeholder="Ingrese su código">
                       <span *ngIf="campoValido('codigo')" class="form-text text-danger">
                           Campo obligatorio</span>
                       <!-- <span class="form-text text-danger">Mínimo 4 letras</span>  -->
@@ -34,14 +35,14 @@
                     class="btn btn-primary btn-lg"
                     (click)="save()"
                   >
-                    Enviar
+                    Listo
                   </button>
                 </div>
               </div>
               <div class="mb-3 row text-center">
-                <div class="col">
+                <div class="col codigo">
                   No recibiste el código?
-                  <a [routerLink]="['/restaurar']">Click aquí</a>
+                  <a class="click" [routerLink]="['/restaurar']">Click aquí</a>
                 </div>
               </div>
             </form>
@@ -50,3 +51,4 @@
       </div>
     </div>
   </section>
+</div>

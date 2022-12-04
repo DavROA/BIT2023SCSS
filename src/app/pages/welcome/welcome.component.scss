@@ -108,8 +108,8 @@ header{
 .card {
     border-radius: 20px;
     background: #F4F4F4;
-    max-width: 24rem;
-    max-height: 24rem; 
+    width: 22rem;
+    height: 15rem; 
 }
 
 .card-title{
@@ -133,14 +133,17 @@ header{
     text-align: center;
     color: #171616;
 } 
-/* .card-text-list{
+.card-text-list{
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
-    text-align: center;
+    text-align: start;
     color: #171616;
     margin: 25px;
-} */
+} 
+i{
+    padding-right:10px;
+}
 .img-conten{
     width: 100%;
     height: 100%;  
@@ -251,111 +254,3 @@ header{
     padding: .5rem;
     padding-top: 0% !important;
 }
-
-
-/*/otrkdjddddddddddddddddddddddddddddd*/
-///new cards
-/* .text-welcome h1 {
-    color: var(--black-color);
-    font-weight: 1000;
-    text-transform: uppercase;
-    font-size: 8em;
-    line-height: 1.5;
-    letter-spacing: 10px;
-}
-.text-normal span {
-    text-transform: uppercase;
-    font-weight: 1000;
-    letter-spacing: 10px;
-    color: var(--black-color);
-}
-
-
-.text-normal h2 {
-    text-transform: uppercase;
-    line-height: 3;
-    font-weight: 500;
-    letter-spacing: 10px;
-    color: var(--black-color);
-}
-
-
-
-
-
-.btn_primary {
-    background-color: var(--color-bue-button);
-    border-radius: 20px;
-    box-shadow: 2px 4px 20px 5px #137cff;
-    -webkit-box-shadow: 2px 4px 20px 5px #137cff;
-    -moz-box-shadow: 2px 4px 20px 5px #137cff;
-    color: var(--white-color);
-}
-
-.btn_primary:hover {
-    color: var(--grey-light);
-    background-color: var(--color-bue-button);
-    // background-color: #09914b; 
-    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-}
-
-.text-card span {
-    text-transform: uppercase;
-    font-weight: 1000;
-    letter-spacing: 10px;
-    color: var(--black-color);
-}
-
-
-
-
-
-
-.titulo-card2 {
-    background-image: radial-gradient(circle at -20.44% 56.16%,
-            #fffaa0 0,
-            #fffc91 6.25%,
-            #fffd82 12.5%,
-            #fffe73 18.75%,
-            #fffd65 25%,
-            #fffc58 31.25%,
-            #f5fa4d 37.5%,
-            #d7f643 43.75%,
-            #b5f23c 50%,
-            #8fed3b 56.25%,
-            #61e840 62.5%,
-            #00e44b 68.75%,
-            #00df59 75%,
-            #00db69 81.25%,
-            #00d87b 87.5%,
-            #00d48f 93.75%,
-            #00d1a4 100%);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border: transparent;
-}
-
-.text-planes span {
-    text-transform: uppercase;
-    font-weight: 1000;
-    letter-spacing: 10px;
-    color: var(--black-color);
-}
-
-.text-planes p {
-    text-transform: uppercase;
-    line-height: 3;
-    letter-spacing: 10px;
-    color: var(--black-color);
-    font-size: x-large;
-}
-
-
-.text-planes h3 {
-    color: var(--white-color);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 2em;
-    line-height: 1;
-    letter-spacing: 10px;
-} */

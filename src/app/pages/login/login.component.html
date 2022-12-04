@@ -5,7 +5,7 @@
     <div class="p-5 col-12" align="center">
       <div class="card mb-3" style="max-width: 720px">
         <div class="row g-0">
-          <div class="col-md-4 primer_cuadro_login">
+          <div class="col-md-3 primer_cuadro_login">
             <hr />
             <hr />
             <hr />
@@ -14,7 +14,7 @@
             </p>
             <img src="./assets/img/login_mano.png" alt="" />
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9">
             <div class="card-body cuadro_card">
               <div class="row">
 
@@ -31,8 +31,6 @@
                     </ul>
                   </div>
                 </nav>
-
-
               </div>
               <hr />
               <h5 class="card-title">Bienvenido de nuevo</h5>
@@ -71,10 +69,8 @@
                 <div class="mb-3 row text-center">
                   <div class="col">
                     Olvidaste tu contraseña?
-                    <a [routerLink]="['/restaurar']">Click aquí</a>
-                    <br />
-                    <!-- Aún no tienes cuenta?
-                      <a [routerLink]="['/registro']">Click aquí</a> -->
+                    <a data-toggle="modal" style="color: rgb(77, 95, 255); text-decoration: underline;"  data-target="#exampleModal">Click aquí</a>
+                     <br />
                   </div>
                 </div>
               </form>
@@ -85,4 +81,56 @@
     </div>
   </div>
 </section>
-<!-- End Hero -->
+<!-- MODAL OLVIDAR CONTRASEÑA -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header login-modal">
+        <img src="./assets/img/logo.png" alt="bitmx" class="bitmx"/>
+      </div>
+      <div class="modal-body">
+        <form autocomplete="off" [formGroup]="Formulario">
+          <div class="mb-3 row justify-content-md-center" align="center">
+              <div class="col-12">
+                  <p>Ingresa el correo electronico con el que  realizaste tu registro</p>
+              </div>
+          </div>
+          <div class="mb-3 row justify-content-md-center">
+            <div class="col-12">
+              <label class="form-label fw-bold">Email:</label>
+              <input type="text" class="form-control " formControlName="email"
+                      placeholder="Ingrese su email" [pattern]="emailCheck">
+                      <div>
+                        <span *ngIf="correoReq()" class="form-text text-danger">
+                            Dirección de correo no válida</span>
+                    </div>
+                    <div>
+                        <span *ngIf="correoPattern()" class="form-text text-danger">
+                            Patrón incorrecto</span>
+                    </div>                </div>
+          </div>
+
+          <div class="mb-3 row text-center">
+            <div class="col">
+              <button 
+                type="submit"
+                [disabled]="Formulario.invalid"
+                class="btn btn-primary btn-lg btn-modal"
+                (click)="saveFormulario()"
+              >
+                Enviar
+              </button>
+            </div>
+          </div>
+          <div class="mb-3 row text-center">
+            <div class="col no_codigo">
+              No recibiste el código?
+              <a class="link_codigo" data-dismiss="modal" [routerLink]="['/restaurar']">Click aquí</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

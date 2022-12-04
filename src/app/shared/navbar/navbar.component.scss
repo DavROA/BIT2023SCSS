@@ -1,4 +1,5 @@
 .color-bit {
+   // background-color: var(--color-black-navbar);
     background-color: var(--color-black-navbar);
   }
   
@@ -30,8 +31,9 @@
     font-size: 1.075rem;
     line-height: 1;
     text-underline-offset: 10px;
-    margin: .5rem 2rem;
-    padding: 1.2rem .8rem;
+    margin: .5rem 0 .5rem 0;
+/*     margin: .5rem 2rem;
+    padding: 1.2rem .8rem; */
   }
   .nav-link:hover, .nav-link:focus{
     color: var(--gren-light);

@@ -14,7 +14,18 @@
     font-family: 'Century Gothic';
     color: white;
 }
+.card-title{
 
+font-family: 'Century Gothic';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+color: #000000;
+margin: 1rem;
+
+
+}
 
 .primer_cuadro_login {
     background-color: #020C27;
@@ -85,3 +96,55 @@
   .nav-link:active{
     color: royalblue;
   }
+
+  .btn{
+  left: 52.18%;
+  right: 24.66%;
+  top: 42.25%;
+  bottom: 53.37%;
+  background: #105E6C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  }
+  /*Modal*/
+.login-modal {
+  background-color: #020c27;
+  justify-content: center;
+
+}
+.modal-body {
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  margin: 10px;
+}
+.btn-modal{
+  background: #105E6C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.no_codigo{
+  font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+.link_codigo{
+  text-decoration-line: underline;
+  color: #105E6C;
+  align-self: center;
+}
+.form-text{
+  font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
+}

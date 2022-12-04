@@ -37,6 +37,9 @@ export class LoginComponent implements OnInit {
       pass: '',
     });
 
+    this.Formulario.setValue({
+      email: '',
+    });
     /*if(this.CS.get('access_token')){
       this.router.navigate(['/welcome']);
     }*/
@@ -96,4 +99,43 @@ export class LoginComponent implements OnInit {
       }
     });
   }
+  /*MODAL*/
+  
+  correoReq(){
+    return this.Formulario.controls['email']?.errors?.['required'] &&
+           this.Formulario.controls['email']?.touched;
+  }
+  
+  correoPattern(){
+    return this.Formulario.controls['email']?.errors?.['pattern'] &&
+           this.Formulario.controls['email']?.touched;
+  }
+  
+    Formulario: FormGroup = this.fb.group({
+      email: ['',[Validators.required]]
+    });
+
+    CampoValido(campo: string){
+      return this.Formulario.controls[campo].errors 
+            && this.Formulario.controls[campo].touched;
+  
+    }
+
+    saveFormulario(){
+      this.AS.codigo(this.Formulario.value).subscribe((data: any) => {
+        if(data.codigo){
+            console.log(data.codigo);
+            this.CS.set('email', this.Formulario.value.email, 1, '/');
+            this.AS.codigo(this.Formulario.value.email).subscribe((datas: any) => {
+              console.log(datas);
+              this.AS.registrarCodigo(datas.codigo, this.Formulario.value.email).subscribe((datast: any) => {
+                this.CS.set('ruta','restaurar',1);
+                this.router.navigate(['/codigo']);
+              });
+            });
+          }else{
+            alert('¡Oh no! Ha ocurrido un error intente más tarde');
+          }
+        });
+    }
 }
