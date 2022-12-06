@@ -14,6 +14,7 @@ export class NavbarClientComponent implements OnInit {
     apellido_paterno: '',
     apellido_materno: '',
     id_usuario: '',
+    perfil:'',
   }
 
   user:any;
@@ -26,13 +27,14 @@ export class NavbarClientComponent implements OnInit {
     this.usuario.apellido_paterno = this.CS.get('apellido_paterno');
     this.usuario.apellido_materno = this.CS.get('apellido_materno');
     this.usuario.id_usuario = this.CS.get('id_usuario');
-
+    this.usuario.perfil = this.CS.get('perfil');
     if(this.usuario.nombre != 'null'){
       this.user = 'xd';
     }else{
       this.user = this.usuario.correo;
       this.user = this.usuario.nombre;
       this.user = this.usuario.id_usuario;
+      this.user = this.usuario.perfil;
     }
   }
 

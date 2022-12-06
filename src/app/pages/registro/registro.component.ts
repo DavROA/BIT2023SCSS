@@ -54,7 +54,8 @@ export class RegistroComponent implements OnInit {
 
   miFormulario: FormGroup = this.fb.group({
     correo: ['', [Validators.required]],
-    pass: ['', [Validators.required, Validators.minLength(8)]],
+    pass: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(10),]],
+    //pass:['',[Validators.pattern('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}$/')]],
     perfil: ['', [Validators.required]],
     estatus: ['', [Validators.required]],
     confirmCorreo: ['', [Validators.required]],

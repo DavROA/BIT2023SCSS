@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CodigoAdminComponent } from './admin/codigo-admin/codigo-admin.component';
 import { CrearAdminComponent } from './admin/crear-admin/crear-admin.component';
 import { ListarAdminComponent } from './admin/listar-admin/listar-admin.component';
+import { ValidarPagoComponent } from './adminjr/validar-pago/validar-pago.component';
 import { CompletarComponent } from './client/completar/completar.component';
 import { EleccionComponent } from './client/eleccion/eleccion.component';
 import { HomeComponent } from './client/home/home.component';
@@ -17,6 +18,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { PasswordComponent } from './pages/password/password.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { RestaurarComponent } from './pages/restaurar/restaurar.component';
+import { TalleresPagesComponent } from './pages/talleres/talleres-pages.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 
@@ -92,6 +94,14 @@ const routes: Routes = [
   {
     path: 'codigo-admin',
     component: CodigoAdminComponent
+  },
+  {
+    path: 'talleres-pages',
+    component: TalleresPagesComponent
+  },
+  {
+    path: 'validar-pago',
+    component: ValidarPagoComponent
   },
   {
     path: '',

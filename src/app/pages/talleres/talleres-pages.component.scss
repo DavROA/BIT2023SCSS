@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    align-content: center;
+}
+img{
+    width: auto;
+}
+.card{
+    background: #F9F9F9;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 20rem;
+}
+.text-talleres{
+    font-weight: 700;
+    font-size: 40px;
+    color: #01022F;
+    text-align: center;
+}
+.name_ponente{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000; 
+    text-align: center;
+    padding-top: 15px;
+}
+.name_taller{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    color: #000000;
+}
+.card-text{
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+    text-align: center;
+}
+.card-body {
+    background-color: #F9F9F9;
+} 

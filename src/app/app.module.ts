@@ -27,6 +27,8 @@ import { InicioComponent } from './admin/inicio/inicio.component';
 import { ListarAdminComponent } from './admin/listar-admin/listar-admin.component';
 import { CrearAdminComponent } from './admin/crear-admin/crear-admin.component';
 import { CodigoAdminComponent } from './admin/codigo-admin/codigo-admin.component';
+import { TalleresPagesComponent } from './pages/talleres/talleres-pages.component';
+import { ValidarPagoComponent } from './adminjr/validar-pago/validar-pago.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { CodigoAdminComponent } from './admin/codigo-admin/codigo-admin.componen
     InicioComponent,
     ListarAdminComponent,
     CrearAdminComponent,
-    CodigoAdminComponent
+    CodigoAdminComponent,
+    TalleresPagesComponent,
+    ValidarPagoComponent,
   ],
   imports: [
     BrowserModule,

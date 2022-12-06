@@ -1,32 +1,3 @@
-<!-- 
-<nav class="navbar color-bit">
-    <div class="container-fluid">
-      <img src="./assets/img/logo.png" alt="bitmx" class="bitmx" />
-      <ul class="nav justify-content-end">
-        <li class="nav-item my-2 px-4 px-xxl-4">
-          <a class="nav-link" [routerLink]="['/planes']">Planes</a>
-        </li>
-        <li class="nav-item my-2 px-4 px-xxl-4">
-          <a class="nav-link" [routerLink]="['/qr']">Boleto</a>
-        </li>
-        <li class="nav-item my-2 px-4 px-xxl-4">
-          <a class="nav-link" [routerLink]="['/talleres']">Talleres</a>
-        </li>
-        <li class="nav-item my-2 px-4 px-xxl-4">
-          <a class="nav-link" [routerLink]="['/perfil']">Perfil</a>
-        </li>
-        <li class="nav-item my-2 px-4 px-xxl-4">
-          <a class="nav-link" [routerLink]="['/listar-admin']">list admin</a>
-        </li>
-        <li class="nav-item my-2 px-4 px-xxl-4">
-          <a class="nav-link" >{{usuario.nombre}}</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
--->
 <!doctype html>
 <html lang="en">
 
@@ -60,36 +31,32 @@
       <!-- elementos del menu colapsable -->
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav mx-auto">
-          <!--
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <!-- usuario cliente -->
+          <li *ngIf="usuario.perfil=='2'" class="nav-item my-2 px-4 px-xxl-4">
+            <a class="nav-link"  [routerLink]="['/planes']">Planes</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Precios</a>
-          </li>
-          <li class="nav-item my-2 px-4 px-xxl-4">
-            <a class="nav-link" [routerLink]="['/planes']">Planes</a>
-          </li>
-          <li class="nav-item my-2 px-4 px-xxl-4">
+          <li *ngIf="usuario.perfil=='2'" class="nav-item my-2 px-4 px-xxl-4">
             <a class="nav-link" [routerLink]="['/talleres']">Talleres</a>
           </li>
-          <li class="nav-item my-2 px-4 px-xxl-4">
-            <a class="nav-link" [routerLink]="['/perfil']">Perfil</a>
-          </li>
-          -->
-          <li class="nav-item my-2 px-4 px-xxl-4">
+          <li *ngIf="usuario.perfil=='2'" class="nav-item my-2 px-4 px-xxl-4">
+            <a class="nav-link" [routerLink]="['/qr']">Boleto</a>
+          </li> 
+          <!-- Administrador Master -->
+          <li *ngIf="usuario.perfil=='1'" class="nav-item my-2 px-4 px-xxl-4">
             <a class="nav-link" [routerLink]="['/qr']">Validar pago</a>
           </li>
-          
-          
-          <li class="nav-item my-2 px-4 px-xxl-4">
+          <li *ngIf="usuario.perfil==='1'" class="nav-item my-2 px-4 px-xxl-4">
             <a class="nav-link" [routerLink]="['/listar-admin']">Lista Administradores</a>
           </li>
-          
+          <!-- Administrador JR-->
+          <li *ngIf="usuario.perfil==='3'" class="nav-item my-2 px-4 px-xxl-4">
+            <a class="nav-link" [routerLink]="['/validar-pago']">Validar pago</a>
+          </li>
         </ul>
         <hr class="d-md-none text-white-50">
-        <a class="nav-link">Usuario: {{usuario.nombre}}</a>
-        <a class="nav-link" href="#">Salir</a>
+        
+        <a class="nav-link" [routerLink]="['/perfil']"><i class="bi bi-person"></i> {{usuario.nombre}}</a>
+        <a class="nav-link" [routerLink]="['/welcome']">Salir</a>
         
       </div>
     </div>
